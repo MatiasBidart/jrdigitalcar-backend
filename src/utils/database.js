@@ -6,6 +6,6 @@ const db = new Sequelize(
         host: config.db.host,
         username: config.db.username,
         password: config.db.password,
-        database: config.db.dbName
+        database: config.db.dbName,
     })
 module.exports = db
