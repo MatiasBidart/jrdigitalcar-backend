@@ -13,7 +13,7 @@ const db = require('./utils/database')
 const cors = require('cors')
 
 app.use(cors({
-  origin: "http://localhost:3000", // tu frontend
+  origin: "jrdigitalcarsrl.com", // tu frontend
   methods: ["GET", "POST", "PATCH", "DELETE"],
 }));
 app.use(express.json());
