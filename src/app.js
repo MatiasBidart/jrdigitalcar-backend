@@ -13,7 +13,7 @@ const db = require('./utils/database')
 const cors = require('cors')
 
 app.use(cors({
-  origin: "https://jrdigitalcarsrl.com", // tu frontend
+  origin: ["https://jrdigitalcarsrl.com", "http://localhost:3000", "https://jrdigitalcar-frontend-ehwcztdi0-crimeneos-projects.vercel.app"]// tu frontend
   methods: ["GET", "POST", "PATCH", "DELETE"],
 }));
 app.use(express.json());
