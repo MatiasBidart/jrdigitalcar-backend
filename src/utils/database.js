@@ -8,11 +8,7 @@ const db = new Sequelize(
         password: config.db.password,
         database: config.db.dbName,
         dialectOptions: process.env.NODE_ENV === 'production' ? {
-            ssl: {
-            require: true,
-            rejectUnauthorized: false,
-            },
-        } : {},
-         logging: false,
+        ssl: {require: true, rejectUnauthorized: false}
+    } : {}
     })
 module.exports = db
